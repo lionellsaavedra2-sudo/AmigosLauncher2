@@ -34,6 +34,24 @@
         android:resizeableActivity="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme">
+
+        <!-- [NUEVO] Pantalla de Login Offline Customizado como Launcher Principal -->
+        <activity
+            android:name=".custom.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- [NUEVO] Pantalla de Sincronización Delta y Carga de Minecraft -->
+        <activity
+            android:name=".custom.SyncActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
         <activity
             android:name=".MissingStorageActivity"
             android:exported="false" />
@@ -42,17 +60,14 @@
             android:name="android.max_aspect"
             android:value="ratio_float" />
 
+        <!-- Modificado: Se quitó el intent-filter de Launcher principal para evitar conflictos -->
         <activity
             android:name=".TestStorageActivity"
             android:exported="true"
             android:label="@string/app_short_name"
             android:launchMode="singleTop">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
+
         <activity
             android:name=".LauncherActivity"
             android:label="@string/app_short_name"
