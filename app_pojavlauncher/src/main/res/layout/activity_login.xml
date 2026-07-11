@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#121212"
+    android:padding="24dp">
+
+    <!-- Logo / Cabecera del Launcher -->
+    <TextView
+        android:id="@+id/launcher_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AMIGOS LAUNCHER"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/launcher_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa con tu usuario offline para comenzar"
+        android:textColor="#888888"
+        android:textSize="14sp"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Contenedor del Formulario -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1E1E1E"
+        android:padding="20dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="24dp">
+
+        <!-- Nombre de Usuario -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de Usuario"
+            android:textColor="#00E676"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#2C2C2C"
+            android:hint="Ej. Steve_12"
+            android:textColorHint="#555555"
+            android:textColor="#FFFFFF"
+            android:paddingHorizontal="16dp"
+            android:inputType="textStateDescription|textInputType"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Configuración de RAM -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asignación de Memoria RAM (GB)"
+            android:textColor="#00E676"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/et_ram"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#2C2C2C"
+            android:text="2"
+            android:textColor="#FFFFFF"
+            android:paddingHorizontal="16dp"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Botón de Conectar -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#00E676"
+            android:text="CONECTAR E INICIAR"
+            android:textColor="#121212"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bifurcación autorizada de PojavLauncher"
+        android:textColor="#444444"
+        android:textSize="11sp"/>
+</LinearLayout>
