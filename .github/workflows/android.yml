@@ -43,6 +43,7 @@ jobs:
           repo: PojavLauncherTeam/android-openjdk-build-multiarch
           branch: buildjre8
           name: jre8-pojav
+          allow_forks: true
 
       - name: Get JRE17
         uses: dawidd6/action-download-artifact@v9
@@ -53,6 +54,7 @@ jobs:
           repo: PojavLauncherTeam/android-openjdk-build-multiarch
           branch: buildjre17-21
           name: jre17-pojav
+          allow_forks: true
 
       - name: Get JRE21
         uses: dawidd6/action-download-artifact@v9
@@ -63,6 +65,7 @@ jobs:
           repo: PojavLauncherTeam/android-openjdk-build-multiarch
           branch: buildjre17-21
           name: jre21-pojav
+          allow_forks: true
 
       - uses: gradle/actions/setup-gradle@v4
         with:
@@ -134,4 +137,3 @@ jobs:
         with:
           name: app-debug-noruntime
           path: out/app-debug-noruntime.*
-
