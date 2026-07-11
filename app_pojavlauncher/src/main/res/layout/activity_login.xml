@@ -57,7 +57,7 @@
             android:textColorHint="#555555"
             android:textColor="#FFFFFF"
             android:paddingHorizontal="16dp"
-            android:inputType="textStateDescription|textInputType"
+            android:inputType="text"
             android:maxLines="1"
             android:textSize="16sp"
             android:layout_marginBottom="20dp"/>
